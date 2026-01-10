@@ -30,8 +30,16 @@ let target = document.body.onclick=(event)=>{
         console.info(buttonValue);
 
         let input = document.querySelector('input');
-        input.value =  buttonValue;
+        if(buttonValue.toUpperCase().trim()==="CLEAR"){
+            input.value="0";
+            console.warn("Cleared!");
+            return;
+        }
 
+        let getCurrentOperation = document.querySelector('input');
+        getCurrentOperation.value += "hello world";
+        
+        console.info("value:", getCurrentOperation);
         
     }
     return;
