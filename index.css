@@ -56,10 +56,11 @@ main>section{
     justify-content: center;
     align-items: center;
 
+
     .Container{
         /* border: 1px solid red; */
         width: clamp(80%, 10rem, 20rem);
-        height: clamp(90%, 5rem, 80%);
+        height: 80%;
 
         form{
             width: 100%;
@@ -158,6 +159,8 @@ main>section{
 
                         &:nth-child(5){
                             button{
+                                
+
                                 &:nth-child(4){
                                     p{
                                         background-color: #FF1B1C;
@@ -177,4 +180,8 @@ main>section{
             }
         }
     }
+}
+
+#Modal-Container.modal-on{
+    display: block;
 }
